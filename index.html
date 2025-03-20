@@ -1,0 +1,81 @@
+
+<!-- Created by FIORI -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QUIZ Preguntas de Manejo AUTO</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- boton d inicio -->
+  <div class="start_btn"><button>EMPEZAR</button></div>
+  <!-- info box (una vez q arranca) -->
+  <div class="info_box">
+    <div class="info-title"><span>Reglas</span></div>
+    <div class="info-list">
+      <div class="info">1. Tenes solo <span>30 seconds</span> para contestar cada pregunta.</div>
+      <div class="info">2. Si salis del <span>QUIZ</span> perderas todo el progreso.</div>
+      <div class="info">3. Los <span>puntos</span> se basan en tus respuestas.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">SALIR</button>
+      <button class="restart">SIGUIENTE</button>
+    </div>
+  </div>
+
+  <div class="quiz_box">
+    <header>
+      <div class="title">QUIZ MANEJO AUTO</div>
+      <div class="timer">
+        <div class="time_left_txt">Tiempo</div>
+        <div class="timer_sec">30</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- preguntas aca js -->
+      </div>
+      <div class="option_list">
+        <!-- opciones aca js -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="total_que">
+        <!-- pregunta n js -->
+      </div>
+      <button class="next_btn">Siguiente</button>
+    </footer>
+  </div>
+  <!-- resultado -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">Completaste el QUIZ!</div>
+    <div class="score_text">
+      <!-- puhtajes aca js -->
+    </div>
+    <div class="buttons">
+      <button class="restart">Jugar de nuevo</button>
+      <button class="quit">Salir</button>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
